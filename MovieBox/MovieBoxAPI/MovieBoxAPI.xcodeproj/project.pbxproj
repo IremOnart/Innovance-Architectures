@@ -13,6 +13,7 @@
 		7E184DF22A6972D500DB0362 /* MovieBoxAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E184DE42A6972D500DB0362 /* MovieBoxAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E184DFF2A69735F00DB0362 /* MovieBoxAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E184DFE2A69735F00DB0362 /* MovieBoxAPIClient.swift */; };
 		7E184E002A6973F900DB0362 /* MovieBoxAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E184DFE2A69735F00DB0362 /* MovieBoxAPIClient.swift */; };
+		7E184E242A697C4100DB0362 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7E184E232A697C4100DB0362 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +25,19 @@
 			remoteInfo = MovieBoxAPI;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7E184E212A697AC200DB0362 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7E184DE12A6972D500DB0362 /* MovieBoxAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MovieBoxAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E184E242A697C4100DB0362 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,12 +126,16 @@
 				7E184DDD2A6972D500DB0362 /* Sources */,
 				7E184DDE2A6972D500DB0362 /* Frameworks */,
 				7E184DDF2A6972D500DB0362 /* Resources */,
+				7E184E212A697AC200DB0362 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MovieBoxAPI;
+			packageProductDependencies = (
+				7E184E232A697C4100DB0362 /* Alamofire */,
+			);
 			productName = MovieBoxAPI;
 			productReference = 7E184DE12A6972D500DB0362 /* MovieBoxAPI.framework */;
 			productType = "com.apple.product-type.framework";
@@ -166,6 +185,9 @@
 				Base,
 			);
 			mainGroup = 7E184DD72A6972D500DB0362;
+			packageReferences = (
+				7E184E222A697C4100DB0362 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 7E184DE22A6972D500DB0362 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -476,6 +498,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E184E222A697C4100DB0362 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E184E232A697C4100DB0362 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E184E222A697C4100DB0362 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E184DD82A6972D500DB0362 /* Project object */;
 }
