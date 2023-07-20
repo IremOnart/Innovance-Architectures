@@ -2,7 +2,7 @@
 //  MovieBoxAPI.h
 //  MovieBoxAPI
 //
-//  Created by İrem Onart on 20.07.2023.
+//  Created by Muhammed Tayyib KARAKUL (Yazılım Geliştirme 2-Dönemsel Çalışan) on 20.07.2023.
 //
 
 #import <Foundation/Foundation.h>

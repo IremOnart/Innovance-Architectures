@@ -7,168 +7,176 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D516AF52A695239002DD4EE /* MovieBoxAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5D516AF42A695239002DD4EE /* MovieBoxAPI.docc */; };
-		5D516AFB2A695239002DD4EE /* MovieBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D516AF02A695239002DD4EE /* MovieBoxAPI.framework */; };
-		5D516B002A695239002DD4EE /* MovieBoxAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D516AFF2A695239002DD4EE /* MovieBoxAPITests.swift */; };
-		5D516B012A695239002DD4EE /* MovieBoxAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D516AF32A695239002DD4EE /* MovieBoxAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D516B0B2A695276002DD4EE /* MovieBoxAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D516B0A2A695276002DD4EE /* MovieBoxAPIClient.swift */; };
-		5D516B1F2A695828002DD4EE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D516B1E2A695828002DD4EE /* Alamofire.framework */; platformFilter = ios; };
+		7E184DE62A6972D500DB0362 /* MovieBoxAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 7E184DE52A6972D500DB0362 /* MovieBoxAPI.docc */; };
+		7E184DEC2A6972D500DB0362 /* MovieBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E184DE12A6972D500DB0362 /* MovieBoxAPI.framework */; };
+		7E184DF12A6972D500DB0362 /* MovieBoxAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E184DF02A6972D500DB0362 /* MovieBoxAPITests.swift */; };
+		7E184DF22A6972D500DB0362 /* MovieBoxAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E184DE42A6972D500DB0362 /* MovieBoxAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E184DFF2A69735F00DB0362 /* MovieBoxAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E184DFE2A69735F00DB0362 /* MovieBoxAPIClient.swift */; };
+		7E184E002A6973F900DB0362 /* MovieBoxAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E184DFE2A69735F00DB0362 /* MovieBoxAPIClient.swift */; };
+		7E184E242A697C4100DB0362 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7E184E232A697C4100DB0362 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D516AFC2A695239002DD4EE /* PBXContainerItemProxy */ = {
+		7E184DED2A6972D500DB0362 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5D516AE72A695239002DD4EE /* Project object */;
+			containerPortal = 7E184DD82A6972D500DB0362 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5D516AEF2A695239002DD4EE;
+			remoteGlobalIDString = 7E184DE02A6972D500DB0362;
 			remoteInfo = MovieBoxAPI;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7E184E212A697AC200DB0362 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		5D516AF02A695239002DD4EE /* MovieBoxAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MovieBoxAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D516AF32A695239002DD4EE /* MovieBoxAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieBoxAPI.h; sourceTree = "<group>"; };
-		5D516AF42A695239002DD4EE /* MovieBoxAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MovieBoxAPI.docc; sourceTree = "<group>"; };
-		5D516AFA2A695239002DD4EE /* MovieBoxAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieBoxAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D516AFF2A695239002DD4EE /* MovieBoxAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBoxAPITests.swift; sourceTree = "<group>"; };
-		5D516B0A2A695276002DD4EE /* MovieBoxAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBoxAPIClient.swift; sourceTree = "<group>"; };
-		5D516B1E2A695828002DD4EE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../../Vendor/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		7E184DE12A6972D500DB0362 /* MovieBoxAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MovieBoxAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E184DE42A6972D500DB0362 /* MovieBoxAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieBoxAPI.h; sourceTree = "<group>"; };
+		7E184DE52A6972D500DB0362 /* MovieBoxAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MovieBoxAPI.docc; sourceTree = "<group>"; };
+		7E184DEB2A6972D500DB0362 /* MovieBoxAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieBoxAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E184DF02A6972D500DB0362 /* MovieBoxAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBoxAPITests.swift; sourceTree = "<group>"; };
+		7E184DFE2A69735F00DB0362 /* MovieBoxAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBoxAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5D516AED2A695239002DD4EE /* Frameworks */ = {
+		7E184DDE2A6972D500DB0362 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D516B1F2A695828002DD4EE /* Alamofire.framework in Frameworks */,
+				7E184E242A697C4100DB0362 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D516AF72A695239002DD4EE /* Frameworks */ = {
+		7E184DE82A6972D500DB0362 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D516AFB2A695239002DD4EE /* MovieBoxAPI.framework in Frameworks */,
+				7E184DEC2A6972D500DB0362 /* MovieBoxAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5D516AE62A695239002DD4EE = {
+		7E184DD72A6972D500DB0362 = {
 			isa = PBXGroup;
 			children = (
-				5D516B1A2A69569D002DD4EE /* Frameworks */,
-				5D516B0A2A695276002DD4EE /* MovieBoxAPIClient.swift */,
-				5D516AF22A695239002DD4EE /* MovieBoxAPI */,
-				5D516AFE2A695239002DD4EE /* MovieBoxAPITests */,
-				5D516AF12A695239002DD4EE /* Products */,
+				7E184DE32A6972D500DB0362 /* MovieBoxAPI */,
+				7E184DEF2A6972D500DB0362 /* MovieBoxAPITests */,
+				7E184DE22A6972D500DB0362 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5D516AF12A695239002DD4EE /* Products */ = {
+		7E184DE22A6972D500DB0362 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D516AF02A695239002DD4EE /* MovieBoxAPI.framework */,
-				5D516AFA2A695239002DD4EE /* MovieBoxAPITests.xctest */,
+				7E184DE12A6972D500DB0362 /* MovieBoxAPI.framework */,
+				7E184DEB2A6972D500DB0362 /* MovieBoxAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5D516AF22A695239002DD4EE /* MovieBoxAPI */ = {
+		7E184DE32A6972D500DB0362 /* MovieBoxAPI */ = {
 			isa = PBXGroup;
 			children = (
-				5D516AF32A695239002DD4EE /* MovieBoxAPI.h */,
-				5D516AF42A695239002DD4EE /* MovieBoxAPI.docc */,
+				7E184DE42A6972D500DB0362 /* MovieBoxAPI.h */,
+				7E184DE52A6972D500DB0362 /* MovieBoxAPI.docc */,
+				7E184DFE2A69735F00DB0362 /* MovieBoxAPIClient.swift */,
 			);
 			path = MovieBoxAPI;
 			sourceTree = "<group>";
 		};
-		5D516AFE2A695239002DD4EE /* MovieBoxAPITests */ = {
+		7E184DEF2A6972D500DB0362 /* MovieBoxAPITests */ = {
 			isa = PBXGroup;
 			children = (
-				5D516AFF2A695239002DD4EE /* MovieBoxAPITests.swift */,
+				7E184DF02A6972D500DB0362 /* MovieBoxAPITests.swift */,
 			);
 			path = MovieBoxAPITests;
-			sourceTree = "<group>";
-		};
-		5D516B1A2A69569D002DD4EE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5D516B1E2A695828002DD4EE /* Alamofire.framework */,
-			);
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5D516AEB2A695239002DD4EE /* Headers */ = {
+		7E184DDC2A6972D500DB0362 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D516B012A695239002DD4EE /* MovieBoxAPI.h in Headers */,
+				7E184DF22A6972D500DB0362 /* MovieBoxAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5D516AEF2A695239002DD4EE /* MovieBoxAPI */ = {
+		7E184DE02A6972D500DB0362 /* MovieBoxAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D516B042A695239002DD4EE /* Build configuration list for PBXNativeTarget "MovieBoxAPI" */;
+			buildConfigurationList = 7E184DF52A6972D500DB0362 /* Build configuration list for PBXNativeTarget "MovieBoxAPI" */;
 			buildPhases = (
-				5D516AEB2A695239002DD4EE /* Headers */,
-				5D516AEC2A695239002DD4EE /* Sources */,
-				5D516AED2A695239002DD4EE /* Frameworks */,
-				5D516AEE2A695239002DD4EE /* Resources */,
+				7E184DDC2A6972D500DB0362 /* Headers */,
+				7E184DDD2A6972D500DB0362 /* Sources */,
+				7E184DDE2A6972D500DB0362 /* Frameworks */,
+				7E184DDF2A6972D500DB0362 /* Resources */,
+				7E184E212A697AC200DB0362 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MovieBoxAPI;
+			packageProductDependencies = (
+				7E184E232A697C4100DB0362 /* Alamofire */,
+			);
 			productName = MovieBoxAPI;
-			productReference = 5D516AF02A695239002DD4EE /* MovieBoxAPI.framework */;
+			productReference = 7E184DE12A6972D500DB0362 /* MovieBoxAPI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5D516AF92A695239002DD4EE /* MovieBoxAPITests */ = {
+		7E184DEA2A6972D500DB0362 /* MovieBoxAPITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D516B072A695239002DD4EE /* Build configuration list for PBXNativeTarget "MovieBoxAPITests" */;
+			buildConfigurationList = 7E184DF82A6972D500DB0362 /* Build configuration list for PBXNativeTarget "MovieBoxAPITests" */;
 			buildPhases = (
-				5D516AF62A695239002DD4EE /* Sources */,
-				5D516AF72A695239002DD4EE /* Frameworks */,
-				5D516AF82A695239002DD4EE /* Resources */,
+				7E184DE72A6972D500DB0362 /* Sources */,
+				7E184DE82A6972D500DB0362 /* Frameworks */,
+				7E184DE92A6972D500DB0362 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5D516AFD2A695239002DD4EE /* PBXTargetDependency */,
+				7E184DEE2A6972D500DB0362 /* PBXTargetDependency */,
 			);
 			name = MovieBoxAPITests;
 			productName = MovieBoxAPITests;
-			productReference = 5D516AFA2A695239002DD4EE /* MovieBoxAPITests.xctest */;
+			productReference = 7E184DEB2A6972D500DB0362 /* MovieBoxAPITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5D516AE72A695239002DD4EE /* Project object */ = {
+		7E184DD82A6972D500DB0362 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					5D516AEF2A695239002DD4EE = {
-						CreatedOnToolsVersion = 14.3.1;
+					7E184DE02A6972D500DB0362 = {
+						CreatedOnToolsVersion = 14.2;
 					};
-					5D516AF92A695239002DD4EE = {
-						CreatedOnToolsVersion = 14.3.1;
+					7E184DEA2A6972D500DB0362 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 5D516AEA2A695239002DD4EE /* Build configuration list for PBXProject "MovieBoxAPI" */;
+			buildConfigurationList = 7E184DDB2A6972D500DB0362 /* Build configuration list for PBXProject "MovieBoxAPI" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -176,26 +184,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 5D516AE62A695239002DD4EE;
-			productRefGroup = 5D516AF12A695239002DD4EE /* Products */;
+			mainGroup = 7E184DD72A6972D500DB0362;
+			packageReferences = (
+				7E184E222A697C4100DB0362 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 7E184DE22A6972D500DB0362 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5D516AEF2A695239002DD4EE /* MovieBoxAPI */,
-				5D516AF92A695239002DD4EE /* MovieBoxAPITests */,
+				7E184DE02A6972D500DB0362 /* MovieBoxAPI */,
+				7E184DEA2A6972D500DB0362 /* MovieBoxAPITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5D516AEE2A695239002DD4EE /* Resources */ = {
+		7E184DDF2A6972D500DB0362 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D516AF82A695239002DD4EE /* Resources */ = {
+		7E184DE92A6972D500DB0362 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -205,35 +216,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5D516AEC2A695239002DD4EE /* Sources */ = {
+		7E184DDD2A6972D500DB0362 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D516B0B2A695276002DD4EE /* MovieBoxAPIClient.swift in Sources */,
-				5D516AF52A695239002DD4EE /* MovieBoxAPI.docc in Sources */,
+				7E184DFF2A69735F00DB0362 /* MovieBoxAPIClient.swift in Sources */,
+				7E184DE62A6972D500DB0362 /* MovieBoxAPI.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D516AF62A695239002DD4EE /* Sources */ = {
+		7E184DE72A6972D500DB0362 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D516B002A695239002DD4EE /* MovieBoxAPITests.swift in Sources */,
+				7E184E002A6973F900DB0362 /* MovieBoxAPIClient.swift in Sources */,
+				7E184DF12A6972D500DB0362 /* MovieBoxAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5D516AFD2A695239002DD4EE /* PBXTargetDependency */ = {
+		7E184DEE2A6972D500DB0362 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5D516AEF2A695239002DD4EE /* MovieBoxAPI */;
-			targetProxy = 5D516AFC2A695239002DD4EE /* PBXContainerItemProxy */;
+			target = 7E184DE02A6972D500DB0362 /* MovieBoxAPI */;
+			targetProxy = 7E184DED2A6972D500DB0362 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5D516B022A695239002DD4EE /* Debug */ = {
+		7E184DF32A6972D500DB0362 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -296,7 +308,7 @@
 			};
 			name = Debug;
 		};
-		5D516B032A695239002DD4EE /* Release */ = {
+		7E184DF42A6972D500DB0362 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -341,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -353,7 +365,7 @@
 			};
 			name = Release;
 		};
-		5D516B052A695239002DD4EE /* Debug */ = {
+		7E184DF62A6972D500DB0362 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -362,29 +374,29 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Vendor/Carthage/Build/iOS/";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = IremOnart.MovieBoxAPI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IremOnart.MovieBoxAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		5D516B062A695239002DD4EE /* Release */ = {
+		7E184DF72A6972D500DB0362 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -393,91 +405,118 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Vendor/Carthage/Build/iOS/";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = IremOnart.MovieBoxAPI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IremOnart.MovieBoxAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		5D516B082A695239002DD4EE /* Debug */ = {
+		7E184DF92A6972D500DB0362 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = IremOnart.MovieBoxAPITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IremOnart.MovieBoxAPITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		5D516B092A695239002DD4EE /* Release */ = {
+		7E184DFA2A6972D500DB0362 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = IremOnart.MovieBoxAPITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IremOnart.MovieBoxAPITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5D516AEA2A695239002DD4EE /* Build configuration list for PBXProject "MovieBoxAPI" */ = {
+		7E184DDB2A6972D500DB0362 /* Build configuration list for PBXProject "MovieBoxAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D516B022A695239002DD4EE /* Debug */,
-				5D516B032A695239002DD4EE /* Release */,
+				7E184DF32A6972D500DB0362 /* Debug */,
+				7E184DF42A6972D500DB0362 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D516B042A695239002DD4EE /* Build configuration list for PBXNativeTarget "MovieBoxAPI" */ = {
+		7E184DF52A6972D500DB0362 /* Build configuration list for PBXNativeTarget "MovieBoxAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D516B052A695239002DD4EE /* Debug */,
-				5D516B062A695239002DD4EE /* Release */,
+				7E184DF62A6972D500DB0362 /* Debug */,
+				7E184DF72A6972D500DB0362 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D516B072A695239002DD4EE /* Build configuration list for PBXNativeTarget "MovieBoxAPITests" */ = {
+		7E184DF82A6972D500DB0362 /* Build configuration list for PBXNativeTarget "MovieBoxAPITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D516B082A695239002DD4EE /* Debug */,
-				5D516B092A695239002DD4EE /* Release */,
+				7E184DF92A6972D500DB0362 /* Debug */,
+				7E184DFA2A6972D500DB0362 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E184E222A697C4100DB0362 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E184E232A697C4100DB0362 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E184E222A697C4100DB0362 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 5D516AE72A695239002DD4EE /* Project object */;
+	rootObject = 7E184DD82A6972D500DB0362 /* Project object */;
 }
