@@ -5,7 +5,7 @@ import Alamofire
 
 
 public protocol TopAlbumsServiceProtocol {
-    func fetchTopMovies(completion: @escaping (Result<TopAlbumResponses>) -> Void)
+    func fetchTopAlbum(completion: @escaping (Result<TopAlbumResponses>) -> Void)
 }
 
 
@@ -20,7 +20,7 @@ public class TopAlbumsService: TopAlbumsServiceProtocol {
     
     public init() { }
     
-    public func fetchTopMovies(completion: @escaping (Result<TopAlbumResponses>) -> Void) {
+    public func fetchTopAlbum(completion: @escaping (Result<TopAlbumResponses>) -> Void) {
         let urlString = "https://rss.applemarketingtools.com/api/v2/us/music/most-played/25/albums.json"
         
         AF.request(urlString).responseData { (response) in
@@ -37,5 +37,6 @@ public class TopAlbumsService: TopAlbumsServiceProtocol {
                 completion(.failure(Error.networkError(internal: error)))
             }
         }
+    
     }
 }

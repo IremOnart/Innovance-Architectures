@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D516AD32A6951BF002DD4EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D516AD22A6951BF002DD4EE /* AppDelegate.swift */; };
 		5D516AD52A6951BF002DD4EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D516AD42A6951BF002DD4EE /* SceneDelegate.swift */; };
 		5D516AD72A6951BF002DD4EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D516AD62A6951BF002DD4EE /* ViewController.swift */; };
 		5D516ADA2A6951BF002DD4EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D516AD82A6951BF002DD4EE /* Main.storyboard */; };
 		5D516ADC2A6951BF002DD4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D516ADB2A6951BF002DD4EE /* Assets.xcassets */; };
 		5D516ADF2A6951BF002DD4EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D516ADD2A6951BF002DD4EE /* LaunchScreen.storyboard */; };
+		5DCBC74A2A6A6C0000D52C68 /* AlbumListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC7492A6A6C0000D52C68 /* AlbumListContracts.swift */; };
+		5DCBC74C2A6A793E00D52C68 /* AlbumList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCBC74B2A6A793E00D52C68 /* AlbumList.storyboard */; };
+		5DCBC74E2A6A79BF00D52C68 /* AlbumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC74D2A6A79BF00D52C68 /* AlbumListView.swift */; };
+		5DCBC7502A6A7E4200D52C68 /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC74F2A6A7E4200D52C68 /* AlbumListViewController.swift */; };
+		5DCBC7522A6A84C100D52C68 /* AlbumPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC7512A6A84C100D52C68 /* AlbumPresentation.swift */; };
+		5DCBC7552A6A8C8F00D52C68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC7542A6A8C8F00D52C68 /* AppDelegate.swift */; };
+		5DCBC7572A6A8D1000D52C68 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC7562A6A8D1000D52C68 /* AppContainer.swift */; };
+		5DCBC7592A6A8D4800D52C68 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC7582A6A8D4800D52C68 /* AppRouter.swift */; };
+		5DCBC75B2A6A8F2A00D52C68 /* AlbumListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC75A2A6A8F2A00D52C68 /* AlbumListBuilder.swift */; };
 		7E184DFC2A69734000DB0362 /* MovieBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E184DFB2A69734000DB0362 /* MovieBoxAPI.framework */; };
 		7E184DFD2A69734000DB0362 /* MovieBoxAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E184DFB2A69734000DB0362 /* MovieBoxAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -50,13 +58,21 @@
 
 /* Begin PBXFileReference section */
 		5D516ACF2A6951BF002DD4EE /* MovieBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D516AD22A6951BF002DD4EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D516AD42A6951BF002DD4EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5D516AD62A6951BF002DD4EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D516AD92A6951BF002DD4EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D516ADB2A6951BF002DD4EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D516ADE2A6951BF002DD4EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D516AE02A6951BF002DD4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DCBC7492A6A6C0000D52C68 /* AlbumListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListContracts.swift; sourceTree = "<group>"; };
+		5DCBC74B2A6A793E00D52C68 /* AlbumList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumList.storyboard; sourceTree = "<group>"; };
+		5DCBC74D2A6A79BF00D52C68 /* AlbumListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListView.swift; sourceTree = "<group>"; };
+		5DCBC74F2A6A7E4200D52C68 /* AlbumListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewController.swift; sourceTree = "<group>"; };
+		5DCBC7512A6A84C100D52C68 /* AlbumPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPresentation.swift; sourceTree = "<group>"; };
+		5DCBC7542A6A8C8F00D52C68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DCBC7562A6A8D1000D52C68 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		5DCBC7582A6A8D4800D52C68 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		5DCBC75A2A6A8F2A00D52C68 /* AlbumListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListBuilder.swift; sourceTree = "<group>"; };
 		7E184DFB2A69734000DB0362 /* MovieBoxAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MovieBoxAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E184E032A69742700DB0362 /* MovieBoxAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MovieBoxAPI.xcodeproj; path = ../MovieBoxAPI/MovieBoxAPI.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +110,8 @@
 		5D516AD12A6951BF002DD4EE /* MovieBox */ = {
 			isa = PBXGroup;
 			children = (
-				5D516AD22A6951BF002DD4EE /* AppDelegate.swift */,
+				5DCBC7532A6A8C6E00D52C68 /* App */,
+				5DCBC7452A6A6B9800D52C68 /* Scenes */,
 				5D516AD42A6951BF002DD4EE /* SceneDelegate.swift */,
 				5D516AD62A6951BF002DD4EE /* ViewController.swift */,
 				5D516AD82A6951BF002DD4EE /* Main.storyboard */,
@@ -111,6 +128,37 @@
 				7E184DFB2A69734000DB0362 /* MovieBoxAPI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DCBC7452A6A6B9800D52C68 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBC7482A6A6BBE00D52C68 /* AlbumList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5DCBC7482A6A6BBE00D52C68 /* AlbumList */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBC7492A6A6C0000D52C68 /* AlbumListContracts.swift */,
+				5DCBC74B2A6A793E00D52C68 /* AlbumList.storyboard */,
+				5DCBC74D2A6A79BF00D52C68 /* AlbumListView.swift */,
+				5DCBC74F2A6A7E4200D52C68 /* AlbumListViewController.swift */,
+				5DCBC7512A6A84C100D52C68 /* AlbumPresentation.swift */,
+				5DCBC75A2A6A8F2A00D52C68 /* AlbumListBuilder.swift */,
+			);
+			path = AlbumList;
+			sourceTree = "<group>";
+		};
+		5DCBC7532A6A8C6E00D52C68 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBC7542A6A8C8F00D52C68 /* AppDelegate.swift */,
+				5DCBC7562A6A8D1000D52C68 /* AppContainer.swift */,
+				5DCBC7582A6A8D4800D52C68 /* AppRouter.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		7E184E022A69741E00DB0362 /* Vendor */ = {
@@ -212,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DCBC74C2A6A793E00D52C68 /* AlbumList.storyboard in Resources */,
 				5D516ADF2A6951BF002DD4EE /* LaunchScreen.storyboard in Resources */,
 				5D516ADC2A6951BF002DD4EE /* Assets.xcassets in Resources */,
 				5D516ADA2A6951BF002DD4EE /* Main.storyboard in Resources */,
@@ -225,9 +274,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DCBC7552A6A8C8F00D52C68 /* AppDelegate.swift in Sources */,
+				5DCBC75B2A6A8F2A00D52C68 /* AlbumListBuilder.swift in Sources */,
 				5D516AD72A6951BF002DD4EE /* ViewController.swift in Sources */,
-				5D516AD32A6951BF002DD4EE /* AppDelegate.swift in Sources */,
+				5DCBC7572A6A8D1000D52C68 /* AppContainer.swift in Sources */,
+				5DCBC74A2A6A6C0000D52C68 /* AlbumListContracts.swift in Sources */,
+				5DCBC7522A6A84C100D52C68 /* AlbumPresentation.swift in Sources */,
 				5D516AD52A6951BF002DD4EE /* SceneDelegate.swift in Sources */,
+				5DCBC7502A6A7E4200D52C68 /* AlbumListViewController.swift in Sources */,
+				5DCBC7592A6A8D4800D52C68 /* AppRouter.swift in Sources */,
+				5DCBC74E2A6A79BF00D52C68 /* AlbumListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

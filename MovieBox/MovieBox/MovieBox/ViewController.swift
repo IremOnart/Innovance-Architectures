@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     let service : TopAlbumsServiceProtocol = TopAlbumsService()
     override func viewDidLoad() {
         super.viewDidLoad()
-        service.fetchTopMovies { (result) in
+        service.fetchTopAlbum { (result) in
             print(result)
             
         }

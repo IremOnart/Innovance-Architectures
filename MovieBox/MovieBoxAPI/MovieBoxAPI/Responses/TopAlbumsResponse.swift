@@ -9,8 +9,6 @@ import Foundation
 
 public struct TopAlbumResponses: Decodable{
     
-    let results: [Albums]
-    
     private enum RootCodingKeys: String, CodingKey {
         case feed
     }
@@ -19,7 +17,9 @@ public struct TopAlbumResponses: Decodable{
         case results
     }
     
-    init(results: ([Albums])){
+    let results: [Albums]
+    
+    public init(results: ([Albums])){
         self.results = results
     }
     
