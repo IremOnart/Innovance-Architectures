@@ -7,12 +7,17 @@
 
 import UIKit
 import MovieBoxAPI
+import Alamofire
 
 class ViewController: UIViewController {
 
+    let service : TopAlbumsServiceProtocol = TopAlbumsService()
     override func viewDidLoad() {
         super.viewDidLoad()
-        MovieBoxAPIClient.testRun()
+        service.fetchTopMovies { (result) in
+            print(result)
+            
+        }
     }
 }
 

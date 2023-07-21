@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D3BEC6B2A6994CC002FE220 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BEC6A2A6994CC002FE220 /* AlbumTests.swift */; };
+		5DCBC7342A69977B00D52C68 /* Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC7332A69977B00D52C68 /* Albums.swift */; };
+		5DCBC7362A6997E100D52C68 /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC7352A6997E100D52C68 /* Decoders.swift */; };
+		5DCBC73D2A69A6D900D52C68 /* TopAlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC73C2A69A6D900D52C68 /* TopAlbumsResponse.swift */; };
+		5DCBC7402A69A87200D52C68 /* TopAlbumsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC73F2A69A87200D52C68 /* TopAlbumsService.swift */; };
+		5DCBC7422A69A93200D52C68 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC7412A69A93200D52C68 /* Result.swift */; };
 		7E184DE62A6972D500DB0362 /* MovieBoxAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 7E184DE52A6972D500DB0362 /* MovieBoxAPI.docc */; };
 		7E184DEC2A6972D500DB0362 /* MovieBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E184DE12A6972D500DB0362 /* MovieBoxAPI.framework */; };
-		7E184DF12A6972D500DB0362 /* MovieBoxAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E184DF02A6972D500DB0362 /* MovieBoxAPITests.swift */; };
 		7E184DF22A6972D500DB0362 /* MovieBoxAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E184DE42A6972D500DB0362 /* MovieBoxAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E184DFF2A69735F00DB0362 /* MovieBoxAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E184DFE2A69735F00DB0362 /* MovieBoxAPIClient.swift */; };
-		7E184E002A6973F900DB0362 /* MovieBoxAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E184DFE2A69735F00DB0362 /* MovieBoxAPIClient.swift */; };
 		7E184E242A697C4100DB0362 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7E184E232A697C4100DB0362 /* Alamofire */; };
 /* End PBXBuildFile section */
 
@@ -40,12 +43,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5D3BEC6A2A6994CC002FE220 /* AlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
+		5DCBC7332A69977B00D52C68 /* Albums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Albums.swift; sourceTree = "<group>"; };
+		5DCBC7352A6997E100D52C68 /* Decoders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoders.swift; sourceTree = "<group>"; };
+		5DCBC73A2A69A03600D52C68 /* album.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = album.json; sourceTree = "<group>"; };
+		5DCBC73C2A69A6D900D52C68 /* TopAlbumsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlbumsResponse.swift; sourceTree = "<group>"; };
+		5DCBC73F2A69A87200D52C68 /* TopAlbumsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlbumsService.swift; sourceTree = "<group>"; };
+		5DCBC7412A69A93200D52C68 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		7E184DE12A6972D500DB0362 /* MovieBoxAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MovieBoxAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E184DE42A6972D500DB0362 /* MovieBoxAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieBoxAPI.h; sourceTree = "<group>"; };
 		7E184DE52A6972D500DB0362 /* MovieBoxAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MovieBoxAPI.docc; sourceTree = "<group>"; };
 		7E184DEB2A6972D500DB0362 /* MovieBoxAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieBoxAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E184DF02A6972D500DB0362 /* MovieBoxAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBoxAPITests.swift; sourceTree = "<group>"; };
-		7E184DFE2A69735F00DB0362 /* MovieBoxAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBoxAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DCBC7312A6995F300D52C68 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBC7352A6997E100D52C68 /* Decoders.swift */,
+				5DCBC7412A69A93200D52C68 /* Result.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5DCBC7322A69972600D52C68 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBC7332A69977B00D52C68 /* Albums.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		5DCBC7372A69994600D52C68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBC73A2A69A03600D52C68 /* album.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5DCBC73B2A69A69100D52C68 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBC73C2A69A6D900D52C68 /* TopAlbumsResponse.swift */,
+				5DCBC73F2A69A87200D52C68 /* TopAlbumsService.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
 		7E184DD72A6972D500DB0362 = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +131,11 @@
 		7E184DE32A6972D500DB0362 /* MovieBoxAPI */ = {
 			isa = PBXGroup;
 			children = (
+				5DCBC73B2A69A69100D52C68 /* Responses */,
+				5DCBC7322A69972600D52C68 /* DTOs */,
+				5DCBC7312A6995F300D52C68 /* Helpers */,
 				7E184DE42A6972D500DB0362 /* MovieBoxAPI.h */,
 				7E184DE52A6972D500DB0362 /* MovieBoxAPI.docc */,
-				7E184DFE2A69735F00DB0362 /* MovieBoxAPIClient.swift */,
 			);
 			path = MovieBoxAPI;
 			sourceTree = "<group>";
@@ -99,7 +143,8 @@
 		7E184DEF2A6972D500DB0362 /* MovieBoxAPITests */ = {
 			isa = PBXGroup;
 			children = (
-				7E184DF02A6972D500DB0362 /* MovieBoxAPITests.swift */,
+				5DCBC7372A69994600D52C68 /* Resources */,
+				5D3BEC6A2A6994CC002FE220 /* AlbumTests.swift */,
 			);
 			path = MovieBoxAPITests;
 			sourceTree = "<group>";
@@ -173,6 +218,7 @@
 					};
 					7E184DEA2A6972D500DB0362 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -220,8 +266,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E184DFF2A69735F00DB0362 /* MovieBoxAPIClient.swift in Sources */,
+				5DCBC7422A69A93200D52C68 /* Result.swift in Sources */,
+				5DCBC7402A69A87200D52C68 /* TopAlbumsService.swift in Sources */,
+				5DCBC73D2A69A6D900D52C68 /* TopAlbumsResponse.swift in Sources */,
+				5DCBC7362A6997E100D52C68 /* Decoders.swift in Sources */,
 				7E184DE62A6972D500DB0362 /* MovieBoxAPI.docc in Sources */,
+				5DCBC7342A69977B00D52C68 /* Albums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,8 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E184E002A6973F900DB0362 /* MovieBoxAPIClient.swift in Sources */,
-				7E184DF12A6972D500DB0362 /* MovieBoxAPITests.swift in Sources */,
+				5D3BEC6B2A6994CC002FE220 /* AlbumTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -442,6 +492,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -451,6 +502,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
