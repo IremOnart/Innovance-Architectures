@@ -17,7 +17,7 @@ public struct TopAlbumResponses: Decodable{
         case results
     }
     
-    let results: [Albums]
+    public let results: [Albums]
     
     public init(results: ([Albums])){
         self.results = results

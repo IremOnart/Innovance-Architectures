@@ -13,14 +13,14 @@ final class AlbumListViewController: UIViewController {
     
     
     @IBOutlet var customView: AlbumlistView!
-    var service: TopAlbumsServiceProtocol!
+    var service: TopAlbumsServiceProtocol?
     private var albumList: [Albums] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Albums"
-        service.fetchTopAlbum{ [weak self] result in
+        service?.fetchTopAlbum{ [weak self] result in
                    
                    guard let self = self else { return }
                    
