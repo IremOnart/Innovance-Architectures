@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 final class AlbumlistView: UIView{
-    
+    var delegate: AlbumListViewDelegate?
     private var albumList: [AlbumPresentation] = []
     @IBOutlet private weak var tableView: UITableView!
     
@@ -17,7 +17,7 @@ final class AlbumlistView: UIView{
 
 
 extension AlbumlistView: AlbumListViewProtocol {
-
+    
     func updateAlbumList(_ albumList: [AlbumPresentation]) {
         self.albumList = albumList
         tableView.reloadData()
@@ -31,7 +31,7 @@ extension AlbumlistView: AlbumListViewProtocol {
 
 extension AlbumlistView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return albumList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -45,8 +45,8 @@ extension AlbumlistView: UITableViewDataSource {
     
 }
 
-extension AlbumlistView: UITabBarDelegate {
+extension AlbumlistView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        delegate?.didSelectAlbum(at: indexPath.row)
     }
 }

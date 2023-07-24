@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D516AD52A6951BF002DD4EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D516AD42A6951BF002DD4EE /* SceneDelegate.swift */; };
 		5D516AD72A6951BF002DD4EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D516AD62A6951BF002DD4EE /* ViewController.swift */; };
 		5D516ADA2A6951BF002DD4EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D516AD82A6951BF002DD4EE /* Main.storyboard */; };
 		5D516ADC2A6951BF002DD4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D516ADB2A6951BF002DD4EE /* Assets.xcassets */; };
@@ -64,7 +63,6 @@
 
 /* Begin PBXFileReference section */
 		5D516ACF2A6951BF002DD4EE /* MovieBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D516AD42A6951BF002DD4EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5D516AD62A6951BF002DD4EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D516AD92A6951BF002DD4EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D516ADB2A6951BF002DD4EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 			children = (
 				5DCBC7532A6A8C6E00D52C68 /* App */,
 				5DCBC7452A6A6B9800D52C68 /* Scenes */,
-				5D516AD42A6951BF002DD4EE /* SceneDelegate.swift */,
 				5D516AD62A6951BF002DD4EE /* ViewController.swift */,
 				5D516AD82A6951BF002DD4EE /* Main.storyboard */,
 				5D516ADB2A6951BF002DD4EE /* Assets.xcassets */,
@@ -309,7 +306,6 @@
 				5DCBC74A2A6A6C0000D52C68 /* AlbumListContracts.swift in Sources */,
 				5DCBC7522A6A84C100D52C68 /* AlbumPresentation.swift in Sources */,
 				5DCBC7A52A6E9E1200D52C68 /* AlbumDetailBuilder.swift in Sources */,
-				5D516AD52A6951BF002DD4EE /* SceneDelegate.swift in Sources */,
 				5DCBC7502A6A7E4200D52C68 /* AlbumListViewController.swift in Sources */,
 				5DCBC7A62A6E9E1200D52C68 /* AlbumDetailContracts.swift in Sources */,
 				5DCBC7A42A6E9E1200D52C68 /* AlbumDetailView.swift in Sources */,

@@ -8,8 +8,15 @@
 import Foundation
 
 
-protocol AlbumListViewProtocol {
+protocol AlbumListViewProtocol: AnyObject {
+    
+    var delegate: AlbumListViewDelegate? { get set }
     func updateAlbumList(_ albumList: [AlbumPresentation])
 //    Deprecated->
     //func setLoading(_ isloading: Bool)
+}
+
+protocol AlbumListViewDelegate: AnyObject {
+    func didSelectAlbum(at index: Int)
+         
 }
