@@ -21,6 +21,12 @@
 		5DCBC7572A6A8D1000D52C68 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC7562A6A8D1000D52C68 /* AppContainer.swift */; };
 		5DCBC7592A6A8D4800D52C68 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC7582A6A8D4800D52C68 /* AppRouter.swift */; };
 		5DCBC75B2A6A8F2A00D52C68 /* AlbumListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC75A2A6A8F2A00D52C68 /* AlbumListBuilder.swift */; };
+		5DCBC7A42A6E9E1200D52C68 /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC79C2A6E9E1200D52C68 /* AlbumDetailView.swift */; };
+		5DCBC7A52A6E9E1200D52C68 /* AlbumDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC79D2A6E9E1200D52C68 /* AlbumDetailBuilder.swift */; };
+		5DCBC7A62A6E9E1200D52C68 /* AlbumDetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC79E2A6E9E1200D52C68 /* AlbumDetailContracts.swift */; };
+		5DCBC7A72A6E9E1200D52C68 /* AlbumDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCBC79F2A6E9E1200D52C68 /* AlbumDetail.storyboard */; };
+		5DCBC7A82A6E9E1200D52C68 /* AlbumDetailPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC7A02A6E9E1200D52C68 /* AlbumDetailPresentation.swift */; };
+		5DCBC7A92A6E9E1200D52C68 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBC7A12A6E9E1200D52C68 /* AlbumDetailViewController.swift */; };
 		7E184DFC2A69734000DB0362 /* MovieBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E184DFB2A69734000DB0362 /* MovieBoxAPI.framework */; };
 		7E184DFD2A69734000DB0362 /* MovieBoxAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E184DFB2A69734000DB0362 /* MovieBoxAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -73,6 +79,12 @@
 		5DCBC7562A6A8D1000D52C68 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		5DCBC7582A6A8D4800D52C68 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		5DCBC75A2A6A8F2A00D52C68 /* AlbumListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListBuilder.swift; sourceTree = "<group>"; };
+		5DCBC79C2A6E9E1200D52C68 /* AlbumDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
+		5DCBC79D2A6E9E1200D52C68 /* AlbumDetailBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailBuilder.swift; sourceTree = "<group>"; };
+		5DCBC79E2A6E9E1200D52C68 /* AlbumDetailContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailContracts.swift; sourceTree = "<group>"; };
+		5DCBC79F2A6E9E1200D52C68 /* AlbumDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlbumDetail.storyboard; sourceTree = "<group>"; };
+		5DCBC7A02A6E9E1200D52C68 /* AlbumDetailPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailPresentation.swift; sourceTree = "<group>"; };
+		5DCBC7A12A6E9E1200D52C68 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
 		7E184DFB2A69734000DB0362 /* MovieBoxAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MovieBoxAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E184E032A69742700DB0362 /* MovieBoxAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MovieBoxAPI.xcodeproj; path = ../MovieBoxAPI/MovieBoxAPI.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +145,7 @@
 		5DCBC7452A6A6B9800D52C68 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				5DCBC79B2A6E9E1200D52C68 /* AlbumDetail */,
 				5DCBC7482A6A6BBE00D52C68 /* AlbumList */,
 			);
 			path = Scenes;
@@ -159,6 +172,19 @@
 				5DCBC7582A6A8D4800D52C68 /* AppRouter.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		5DCBC79B2A6E9E1200D52C68 /* AlbumDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5DCBC79C2A6E9E1200D52C68 /* AlbumDetailView.swift */,
+				5DCBC79D2A6E9E1200D52C68 /* AlbumDetailBuilder.swift */,
+				5DCBC79E2A6E9E1200D52C68 /* AlbumDetailContracts.swift */,
+				5DCBC79F2A6E9E1200D52C68 /* AlbumDetail.storyboard */,
+				5DCBC7A02A6E9E1200D52C68 /* AlbumDetailPresentation.swift */,
+				5DCBC7A12A6E9E1200D52C68 /* AlbumDetailViewController.swift */,
+			);
+			path = AlbumDetail;
 			sourceTree = "<group>";
 		};
 		7E184E022A69741E00DB0362 /* Vendor */ = {
@@ -261,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DCBC74C2A6A793E00D52C68 /* AlbumList.storyboard in Resources */,
+				5DCBC7A72A6E9E1200D52C68 /* AlbumDetail.storyboard in Resources */,
 				5D516ADF2A6951BF002DD4EE /* LaunchScreen.storyboard in Resources */,
 				5D516ADC2A6951BF002DD4EE /* Assets.xcassets in Resources */,
 				5D516ADA2A6951BF002DD4EE /* Main.storyboard in Resources */,
@@ -276,13 +303,18 @@
 			files = (
 				5DCBC7552A6A8C8F00D52C68 /* AppDelegate.swift in Sources */,
 				5DCBC75B2A6A8F2A00D52C68 /* AlbumListBuilder.swift in Sources */,
+				5DCBC7A92A6E9E1200D52C68 /* AlbumDetailViewController.swift in Sources */,
 				5D516AD72A6951BF002DD4EE /* ViewController.swift in Sources */,
 				5DCBC7572A6A8D1000D52C68 /* AppContainer.swift in Sources */,
 				5DCBC74A2A6A6C0000D52C68 /* AlbumListContracts.swift in Sources */,
 				5DCBC7522A6A84C100D52C68 /* AlbumPresentation.swift in Sources */,
+				5DCBC7A52A6E9E1200D52C68 /* AlbumDetailBuilder.swift in Sources */,
 				5D516AD52A6951BF002DD4EE /* SceneDelegate.swift in Sources */,
 				5DCBC7502A6A7E4200D52C68 /* AlbumListViewController.swift in Sources */,
+				5DCBC7A62A6E9E1200D52C68 /* AlbumDetailContracts.swift in Sources */,
+				5DCBC7A42A6E9E1200D52C68 /* AlbumDetailView.swift in Sources */,
 				5DCBC7592A6A8D4800D52C68 /* AppRouter.swift in Sources */,
+				5DCBC7A82A6E9E1200D52C68 /* AlbumDetailPresentation.swift in Sources */,
 				5DCBC74E2A6A79BF00D52C68 /* AlbumListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
