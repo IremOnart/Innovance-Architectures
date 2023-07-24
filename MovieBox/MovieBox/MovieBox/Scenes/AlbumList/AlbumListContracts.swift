@@ -8,15 +8,23 @@
 import Foundation
 
 
-@objc protocol AlbumListViewProtocol: AnyObject {
-    
-    var delegate: AlbumListViewDelegate? { get set }
-    func updateAlbumList(_ albumList: [AlbumPresentation])
-//    Deprecated->
-    //func setLoading(_ isloading: Bool)
+protocol AlbumListViewModelProtocol{
+    var delegate: AlbumListViewModelDelegate? { get set }
+    func load()
+    func selectAlbum(at index: Int)
 }
 
-@objc protocol AlbumListViewDelegate: AnyObject {
-    func didSelectAlbum(at index: Int)
-         
+enum AlbumListViewModelOutput: Equatable{
+    case updateTitle(String)
+    case showAlbumList([AlbumPresentation])
 }
+
+enum AlbumListViewRoute{
+    case detail(AlbumDetailViewModelProtocol)
+}
+
+protocol AlbumListViewModelDelegate: AnyObject{
+    func handleViewModelOutput(_ output: AlbumListViewModelOutput)
+    func navigate(to route: AlbumListViewRoute)
+}
+

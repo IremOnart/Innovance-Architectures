@@ -9,14 +9,27 @@ import Foundation
 import UIKit
 import MovieBoxAPI
 
-final class AlbumDetailViewController: UIViewController {
+final class AlbumDetailViewController: UIViewController{
     
-    @IBOutlet var customView: AlbumDetailView!
     
-    var album: Albums!
+    @IBOutlet weak var albumTitleLabel: UILabel!
+    @IBOutlet weak var artistNameLabel: UILabel!
+    @IBOutlet weak var genreLable: UILabel!
+    
+    var viewModel: AlbumDetailViewModelProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        customView.updateAlbumDetail(AlbumDetailPresentation(album: album))
+        viewModel.delegate = self
+        viewModel.load()
+    }
+}
+
+extension AlbumDetailViewController: AlbumDetailViewModelDelegate {
+    
+    func showDetail(_ presentation: AlbumDetailPresentation) {
+        albumTitleLabel.text = presentation.title
+        artistNameLabel.text = presentation.artistName
+        genreLable.text = presentation.genre
     }
 }

@@ -12,40 +12,69 @@ import MovieBoxAPI
 final class AlbumListViewController: UIViewController {
     
     
-    @IBOutlet var customView: AlbumListViewProtocol!
-    var service: TopAlbumsServiceProtocol?
-    private var albumList: [Albums] = []
+    @IBOutlet private weak var tableView: UITableView!
+    
+    var viewModel: AlbumListViewModelProtocol! {
+            didSet {
+                viewModel.delegate = self
+            }
+        }
+   
+    private var albumList = [AlbumPresentation]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
-        title = "Albums"
-        customView.delegate = self
-        service?.fetchTopAlbum{ [weak self] result in
-                   
-                   guard let self = self else { return }
-                   
-                   switch result {
-                   case .success(let value):
-                       self.albumList = value.results
-                       let albumPresentations = value.results.map(AlbumPresentation.init)
-                       self.customView.updateAlbumList(albumPresentations)
-                   case .failure(let error):
-                       print(error)
-                   }
-                   
-                
-               }
+        viewModel.load()
+      
+      
         }
     
 }
 
-extension AlbumListViewController : AlbumListViewDelegate{
-    func didSelectAlbum(at index: Int) {
-       let album = albumList[index]
-        let albumDetailViewController = AlbumDetailBuilder.make(with: album)
-        show(albumDetailViewController, sender: nil)
+extension AlbumListViewController: AlbumListViewModelDelegate {
+    
+    func handleViewModelOutput(_ output: AlbumListViewModelOutput) {
+        switch output {
+        case .updateTitle(let title):
+            self.title = title
+        case .showAlbumList(let albumList):
+            self.albumList = albumList
+            tableView.reloadData()
+        
+        }
     }
+    
+    func navigate(to route: AlbumListViewRoute) {
+        switch route {
+        case .detail(let viewModel):
+            let viewController = AlbumDetailBuilder.make(with: viewModel)
+            show(viewController, sender: nil)
+        }
+    }
+}
+
+extension AlbumListViewController: UITableViewDataSource, UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return albumList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AlbumListCell", for: indexPath)
+                let album = albumList[indexPath.row]
+                cell.textLabel?.text = album.title
+                cell.detailTextLabel?.text = album.detail
+                return cell
+    }
+   
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           tableView.deselectRow(at: indexPath, animated: false)
+           viewModel.selectAlbum(at: indexPath.row)
+       }
     
     
 }
+
+

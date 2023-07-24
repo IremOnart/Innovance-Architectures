@@ -47,8 +47,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="5EZ-qb-Rvc" id="Fk8-lv-hUf"/>
-                                    <outlet property="delegate" destination="5EZ-qb-Rvc" id="Cre-eB-67b"/>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="4cN-xt-JDv"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="jjQ-aJ-BO2"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -60,12 +60,9 @@
                             <constraint firstAttribute="trailing" secondItem="hx5-n6-vFq" secondAttribute="trailing" id="QFJ-JX-bxq"/>
                             <constraint firstAttribute="bottom" secondItem="hx5-n6-vFq" secondAttribute="bottom" id="uuo-4r-FOZ"/>
                         </constraints>
-                        <connections>
-                            <outlet property="tableView" destination="hx5-n6-vFq" id="vBk-8c-45N"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="customView" destination="5EZ-qb-Rvc" id="r8u-nU-toA"/>
+                        <outlet property="tableView" destination="hx5-n6-vFq" id="v0L-xa-e8Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

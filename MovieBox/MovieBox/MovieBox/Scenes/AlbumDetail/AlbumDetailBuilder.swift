@@ -12,11 +12,11 @@ import MovieBoxAPI
 
 final class AlbumDetailBuilder {
     
-    static func make(with album: Albums) -> AlbumDetailViewController {
+    static func make(with viewModel: AlbumDetailViewModelProtocol) -> AlbumDetailViewController {
         
         let storyboard = UIStoryboard(name: "AlbumDetail", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "AlbumDetailViewController") as! AlbumDetailViewController
-        viewController.album = album
+        viewController.viewModel = viewModel
         return viewController
     }
 }

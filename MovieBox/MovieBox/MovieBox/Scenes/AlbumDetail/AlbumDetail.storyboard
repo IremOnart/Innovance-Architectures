@@ -91,14 +91,11 @@
                             <constraint firstItem="20d-Bv-XkY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="28" id="DNL-VV-08Y"/>
                             <constraint firstItem="20d-Bv-XkY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="42" id="ORM-2w-ZmP"/>
                         </constraints>
-                        <connections>
-                            <outlet property="albumTitleLabel" destination="564-6D-oem" id="abk-ik-Ka8"/>
-                            <outlet property="artistNameLabel" destination="owO-f7-vhP" id="VIs-Z9-m26"/>
-                            <outlet property="genreLabel" destination="Wsw-NR-LYr" id="NVe-X1-Abc"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="customView" destination="5EZ-qb-Rvc" id="xmB-t0-V6f"/>
+                        <outlet property="albumTitleLabel" destination="564-6D-oem" id="xIy-AY-9dt"/>
+                        <outlet property="artistNameLabel" destination="owO-f7-vhP" id="cSO-ae-eJr"/>
+                        <outlet property="genreLable" destination="Wsw-NR-LYr" id="n6p-MZ-qDw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -12,9 +12,9 @@ import MovieBoxAPI
 class ResourceLoader {
     
     enum AlbumResource: String {
-        case movie1
-        case movie2
-        case movie3
+        case album1
+        case album2
+        case album3
     }
     
     static func loadMovie(resource: AlbumResource) throws -> Albums {

@@ -7,86 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8496E70B-90D0-4E1A-8046-602E26941FE2"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MovieBox/MovieBox/Scenes/AlbumList/AlbumListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "didSelectAlbum(at:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E1584631-AA50-4A06-ABBB-D04571FDB745"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MovieBox/MovieBox/Scenes/AlbumList/AlbumListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BA05CF86-F9BF-4B79-A4DD-1FE247895A3E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MovieBox/MovieBox/Scenes/AlbumList/AlbumListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BA05CF86-F9BF-4B79-A4DD-1FE247895A3E - 90f17920b158d6fe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (MovieBoxAPI.Result&lt;MovieBoxAPI.TopAlbumResponses&gt;) -&gt; () in MovieBox.AlbumListViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "MovieBox"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/iremonart/Documents/GitHub/Innovance-Architectures/MovieBox/MovieBox/MovieBox/Scenes/AlbumList/AlbumListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "388">
-               </Location>
-               <Location
-                  uuid = "BA05CF86-F9BF-4B79-A4DD-1FE247895A3E - f231eb87582a91f9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "implicit closure #1 (MovieBoxAPI.Albums) -&gt; MovieBox.AlbumPresentation in closure #1 (MovieBoxAPI.Result&lt;MovieBoxAPI.TopAlbumResponses&gt;) -&gt; () in MovieBox.AlbumListViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "MovieBox"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/iremonart/Documents/GitHub/Innovance-Architectures/MovieBox/MovieBox/MovieBox/Scenes/AlbumList/AlbumListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "96">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A29678D5-F732-4192-8A0A-D76967C04D46"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -113,22 +33,6 @@
             startingLineNumber = "40"
             endingLineNumber = "40"
             landmarkName = "testAlbumList()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7D2A3393-BD5B-4A7C-B4EF-28645959465C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MovieBox/MovieBox/Scenes/AlbumList/AlbumListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

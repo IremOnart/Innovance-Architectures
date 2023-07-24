@@ -7,6 +7,11 @@
 
 import Foundation
 
-protocol AlbumDetailViewProtocol {
-    func updateAlbumDetail(_ albumDetail: AlbumDetailPresentation)
+protocol AlbumDetailViewModelDelegate: AnyObject {
+    func showDetail(_ presentation: AlbumDetailPresentation)
+}
+
+protocol AlbumDetailViewModelProtocol {
+    var delegate: AlbumDetailViewModelDelegate? { get set }
+    func load()
 }
