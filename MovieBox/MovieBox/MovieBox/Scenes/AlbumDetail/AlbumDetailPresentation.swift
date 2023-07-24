@@ -11,14 +11,14 @@ import MovieBoxAPI
 struct AlbumDetailPresentation {
     let title: String
     let artistName: String
-    let releaseDate: Date
+    let genre: String
 }
 
 extension AlbumDetailPresentation {
-    init(album: Albums) {
-        self.init(title: album.name, artistName: album.artistName, releaseDate: album.releaseDate)
-    }
 //    init(album: Albums) {
-//        self.init(title: album.name, artistName: album.name, genre: album.genres.map({ $0.name }).joined(separator: ", "))
+//        self.init(title: album.name, artistName: album.artistName, releaseDate: album.releaseDate)
 //    }
+    init(album: Albums) {
+        self.init(title: album.name, artistName: album.name, genre: album.genres.map({ $0.name }).joined(separator: ", "))
+    }
 }

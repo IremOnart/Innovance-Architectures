@@ -8,7 +8,7 @@
 import Foundation
 
 
-protocol AlbumListViewProtocol: AnyObject {
+@objc protocol AlbumListViewProtocol: AnyObject {
     
     var delegate: AlbumListViewDelegate? { get set }
     func updateAlbumList(_ albumList: [AlbumPresentation])
@@ -16,7 +16,7 @@ protocol AlbumListViewProtocol: AnyObject {
     //func setLoading(_ isloading: Bool)
 }
 
-protocol AlbumListViewDelegate: AnyObject {
+@objc protocol AlbumListViewDelegate: AnyObject {
     func didSelectAlbum(at index: Int)
          
 }

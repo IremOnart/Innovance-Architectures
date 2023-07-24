@@ -21,6 +21,6 @@ extension AlbumDetailView: AlbumDetailViewProtocol {
     func updateAlbumDetail(_ albumDetail: AlbumDetailPresentation) {
         albumTitleLabel.text = albumDetail.title
         artistNameLabel.text = albumDetail.artistName
-        genreLabel.text = DateFormatter().string(from: albumDetail.releaseDate)
+        genreLabel.text = albumDetail.genre
     }
 }

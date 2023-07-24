@@ -8,7 +8,7 @@
 import Foundation
 
 public enum Decoders {
-     static let plainDateDecoder: JSONDecoder = {
+     public static let plainDateDecoder: JSONDecoder = {
 //        2023-06-30
         let decoder = JSONDecoder()
         let dateFormatter = DateFormatter()

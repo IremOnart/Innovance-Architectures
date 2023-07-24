@@ -12,7 +12,7 @@ import MovieBoxAPI
 final class AlbumListViewController: UIViewController {
     
     
-    @IBOutlet var customView: AlbumlistView!
+    @IBOutlet var customView: AlbumListViewProtocol!
     var service: TopAlbumsServiceProtocol?
     private var albumList: [Albums] = []
     
