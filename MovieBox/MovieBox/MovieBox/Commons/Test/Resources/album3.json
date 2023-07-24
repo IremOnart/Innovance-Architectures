@@ -1,0 +1,25 @@
+
+{
+        "artistName": "King Von",
+        "id": "1695999389",
+        "name": "Grandson",
+        "releaseDate": "2023-07-14",
+        "kind": "albums",
+        "artistId": "1231467923",
+        "artistUrl": "https://music.apple.com/us/artist/king-von/1231467923",
+        "contentAdvisoryRating": "Explict",
+        "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ed/d8/a6/edd8a693-0d35-b307-8af8-b11e7d8c00f9/197342252782_cover.jpg/100x100bb.jpg",
+        "genres": [
+          {
+            "genreId": "18",
+            "name": "Hip-Hop/Rap",
+            "url": "https://itunes.apple.com/us/genre/id18"
+          },
+          {
+            "genreId": "34",
+            "name": "Music",
+            "url": "https://itunes.apple.com/us/genre/id34"
+          }
+        ],
+        "url": "https://music.apple.com/us/album/grandson/1695999389"
+      }
